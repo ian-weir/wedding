@@ -1,9 +1,20 @@
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [
     tailwindcss()
   ],
-    publicDir: "public"
+  publicDir: "public",
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        src: resolve(__dirname, 'src/page.html')
+      }
+    }
+  },
+  base: '/wedding/' 
+  
 });
