@@ -3,7 +3,7 @@
 @plugin "daisyui/theme" {
   name: "IanAndMorgann";
   default: true;
-  prefersdark: false;
+  prefersdark: true;
   color-scheme: "light";
   --color-base-100: oklch(100% 0 0);
   --color-base-200: oklch(98% 0 0);
@@ -43,6 +43,10 @@ html {
   scroll-margin-block-start: 4rem;
 }
 
-.scroll-to {
+.scroll-location {
   scroll-margin-block-start: 2.5rem;
+}
+
+.scroll-to {
+  scroll-margin-block-start: 4rem;
 }
