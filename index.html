@@ -8,10 +8,291 @@
   </head>
   <body bg-secondary>
     <div class="bg-secondary">
-      <div class="w-auto md:w-4/5 m-auto text-center pb-10" id="app"></div>
+      <div class="w-auto md:w-4/5 m-auto text-center pb-10" id="app">
+
+        <div class="navbar bg-primary sticky top-0 absolute z-9">
+  <div class="bg-primary text-primary-content justify-center hidden md:flex w-full">
+    <a role="button" class="btn btn-ghost text-xl" href="#home">Home</a>
+    <a role="button" class="btn btn-ghost text-xl" href="#location">Location</a>
+    <a role="button" class="btn btn-ghost text-xl" href="#faq">FAQ</a>
+    <a role="button" class="btn btn-ghost text-xl" href="#accomodations">Accomodations</a>
+    <a role="button" class="btn btn-ghost text-xl" href="#rsvp">RSVP</a>
+  </div>
+
+  <ul class="menu lg:menu-horizontal bg-base-200 rounded-box lg:mb-64 md:hidden bg-primary text-primary-content w-full">
+    <li>
+      <details !open>
+        <summary>Menu</summary>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#accomodations">Accomodations</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </details>
+    </li>
+  </ul>
+
+
+  <!-- <div class="dropdown w-full justify-self-center">
+    <div tabindex="0" role="button" class="btn btn-ghost md:hidden bg-primary text-primary-content ">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
     </div>
-    <script type="module" src="/src/main.js"></script>
-    <script src="https://unpkg.com/htmx.org@2.0.8"></script>
+    <ul
+      tabindex="-1"
+      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+      <li><a>Item 1</a></li>
+      <li>
+        <a>Parent</a>
+        <ul class="p-2">
+          <li><a>Submenu 1</a></li>
+          <li><a>Submenu 2</a></li>
+        </ul>
+      </li>
+      <li><a>Item 3</a></li>
+    </ul>
+  </div> -->
+</div>
+
+<div id="home" class="flex flex-col justify-center z-1 scroll-home">
+  <div id="hero" class="hero"
+    style="height: 80vh; background-image: url(./public/hero.avif); background-position: center 75%; background-size: cover; background-repeat: no-repeat;">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-primary-content text-center">
+      <div class="max-w-md">
+        <p>
+          We're excited for you to celebrate our big day with us!
+        </p>
+        <p>
+          June 27th 2026
+        </p>
+      </div>
+    </div>
+  </div>
+  <h1 class="m-5 text-primary text-5xl font-bold text-center">Morgann & Ian</h1>
+
+  <a role="button" class="btn btn-primary self-center m-5" href="#rsvp">RSVP</a>
+</div>
+
+<div id="sections" class="">
+  <div id="location" class="w-7/10 m-auto py-5 scroll-location">
+    <h2 class="text-3xl"> Location </h2>
+    <div class="grid md:grid-cols-2 gap-4 mt-4 place-items-center">
+      <div>
+        <div>
+          Bonterra Trattoria
+        </div>
+        <div>
+          1016 8 St SW
+        </div>
+        <div>
+          Calgary, Alberta
+        </div>
+        <div>
+          <a class="link link-info" target="_blank" rel="noopener noreferrer"
+            href="https://maps.app.goo.gl/aQ6x3SRkpUQXJsKP9"> Directions</a>
+        </div>
+      </div>
+      <img class="rounded-lg" src="./public/bonterra-ext.png">
+    </div>
+
+
+  </div>
+</div>
+
+<div id="faq" class="w-7/10 m-auto scroll-to">
+  <h2 class="text-3xl my-4"> FAQ </h2>
+  <div class="text-xl mb-2 font-bold">
+    Can we bring children?
+  </div>
+  <div class="text-base mb-6">
+    Any other occasion we would love to spend time with you and your kids but we ask that they stay home this time.
+  </div>
+  <div class="text-xl mb-2 font-bold">
+    What's the dress code?
+  </div>
+  <div class="text-base mb-6">
+    The dress code is semi-formal. Skirt & a blouse, dress or jumpsuit for women. Dress pants, collared shirt and
+    optionally a tie and suit jacket. Use your best judgement :)
+  </div>
+  <div class="text-xl mb-2 font-bold">
+    Is there parking at the venue?
+  </div>
+  <div class="text-base mb-6">
+    Yes! There's paid parking right behind Bonterra. It's an Indigo parking lot and should be ~$10 from 4pm until 8am
+    the next day.
+    </br>
+    Alternatively there's lots of street parking around the venue which is free after 6pm.
+    </br>
+    If you're a cool person who takes public transit you can take the CTrain to 7th or 8th street station and walk down
+    8th street to the venue. The 2, 6, 7, 13 and 90 bus routes all stop within a few blocks as well.
+  </div>
+</div>
+
+<div id="accomodations" class="w-7/10 m-auto scroll-to">
+  <h2 class="text-3xl my-4"> Accomodations </h2>
+    <div class="text-base mb-4">
+      We don't have a block of hotel rooms booked anywhere but here's a few nearby hotels you could stay at.
+    </div>
+  <div>
+    <div class="mb-4">
+      <div>
+        Residence Inn by Marriott Calgary Downtown/Beltline District - 6 minute walk to Bonterra
+      </div>
+      <a class="link link-info" target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/JWiZwwFGV9U8PXtz8"> 
+          Directions
+        </a>
+      </br>
+      <a class="link link-info" target="_blank" rel="noopener noreferrer" href="https://www.marriott.com/en-us/hotels/yycbl-residence-inn-calgary-downtown-beltline-district/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"> 
+          Booking
+        </a>
+    </div>
+    
+    <div class="mb-4">
+      <div>
+        Hotel Arts - 18 minute walk / 3 minute drive to Bonterra
+      </div>
+      <a class="link link-info" target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/qMFnVnJky1cdxaPp7"> 
+          Directions
+        </a>
+      </br>
+      <a class="link link-info" target="_blank" rel="noopener noreferrer" href="https://hotelarts.ca/"> 
+          Booking
+        </a>
+    </div>
+
+    <div class="mb-4">
+      <div>
+        The Inn on Officers Garden - 9 minute drive to Bonterra (if you want somewhere a bit more quiet and away from downtown)
+      </div>
+      <a class="link link-info" target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/pt19coEJKbkwTrWX7"> 
+          Directions
+        </a>
+      </br>
+      <a class="link link-info" target="_blank" rel="noopener noreferrer" href="https://www.theinncalgary.com"> 
+          Booking
+        </a>
+    </div>
+  </div>
+</div>
+
+ <!-- action=url method="post"  -->
+ <!-- 
+    action="https://script.google.com/macros/s/AKfycbz7nJ8hZCH2ROurzgdjaBjsxTfo3N8DhZ9yMXo-_BtabvgCnsV3XGtgTmGFACA03eQaxw/exec"
+    target="result"
+    method="post" 
+  -->
+<div id="rsvp" class="w-7/10 m-auto scroll-to">
+  <h2 class="text-3xl my-4"> RSVP </h2>
+  <div class="text-base mb-4">
+    You're more than welcome to bring whoever you'd like for your plus one. Your significant other, best friend or even that coworker you're really trying to impress.
+    If you bring them we're sure they're great!
+  </div>
+  <form
+    id="rsvpForm"
+   >
+    <label class="px-5">
+      <span class="label">Attending</span>
+      <input type="radio" name="attending" class="radio radio-primary" checked="checked" value="Yes"/>
+    </label>
+    <label class="px-5">
+      <span class="label">Cannot Attend</span>
+      <input type="radio" name="attending" class="radio radio-error" value="No" />
+    </label>
+    <fieldset class="fieldset lg:border lg:p-4">
+      <legend class="fieldset-legend">First Attendee</legend>
+      <div class="lg:grid lg:grid-cols-2 gap-y-4">
+        <label class="input">
+          <span class="label">First name</span>
+          <input type="text" name="firstNameOne" placeholder="" required/>
+        </label>
+
+        <label class="input">
+          <span class="label">Last name</span>
+          <input type="text" name="lastNameOne" placeholder="" required/>
+        </label>
+
+        <label class="input col-span-2 w-full">
+          <span class="label">Allergies</span>
+          <input name="allergiesOne" type placeholder=""></textarea>
+        </label>
+
+
+      </div>
+    </fieldset>
+    <fieldset class="fieldset lg:border lg:p-4">
+      <legend class="fieldset-legend">Second Attendee (optional)</legend>
+      <div class="lg:grid lg:grid-cols-2 gap-y-4">
+        <label class="input">
+          <span class="label">First name</span>
+          <input name="firstNameTwo" type="text" placeholder="" />
+        </label>
+
+        <label class="input">
+          <span class="label">Last name</span>
+          <input name="lastNameTwo" type="text" placeholder="" />
+        </label>
+
+        <label class="input col-span-2 w-full">
+          <span class="label">Allergies</span>
+          <input name="allergiesTwo" placeholder=""></textarea>
+        </label>
+      </div>
+    </fieldset>
+    <div class="m-6">
+      <label class="label mx-5">Song requests</label>
+      <textarea name="songs" class="textarea h-24 w-4/5"></textarea>
+    </div>
+    <input id="submitButton" type="submit" class="btn btn-primary self-center m-5" value="Submit" >
+    </input>
+  </form>
+  <div style="display: none;" id="result" class="text-xl mb-2 font-bold text-primary">Testing</div>
+</div>
+</div>
+      </div>
+    </div>
+    <script>
+        const form = document.getElementById("rsvpForm");
+        const submitButton = document.getElementById("submitButton")
+        const resultSection = document.getElementById("result")
+
+        async function logSubmit(event) {
+          console.log(resultSection.textContent)
+          submitButton.value = "Submitting..."
+          submitButton.setAttribute("disabled", "disabled")
+          const url = "https://script.google.com/macros/s/AKfycbz7nJ8hZCH2ROurzgdjaBjsxTfo3N8DhZ9yMXo-_BtabvgCnsV3XGtgTmGFACA03eQaxw/exec"
+          event.preventDefault()
+          const data = new FormData(form);
+          console.log(data.get("attending"))
+
+          try {
+            const response = await fetch(url,
+              {
+                method: "POST",
+                body: data
+              }
+            )
+            console.log(response)
+            submitButton.value = "Submit"
+            submitButton.removeAttribute("disabled")
+            submitButton.setAttribute("style", "display: none;")
+            resultSection.removeAttribute("style")
+            if(data.get("attending") === "Yes") {
+              resultSection.textContent = "We've got your RSVP, we look forward to seeing you on our wedding day!"
+            } else {
+              resultSection.textContent = "Sorry to hear you won't be making it! It's okay we still like you :)"
+            }
+            form.reset()
+          } catch (error) {
+            resultSection.textContent = "Something went wrong :( Try again and if it doesn't work shoot us a text"
+          } finally {
+            submitButton.value = "Submit"
+            submitButton.removeAttribute("disabled")
+          }
+        }
+        form.addEventListener("submit", logSubmit);
+    </script>
   </body>
 </html>
 
