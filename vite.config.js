@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [
     tailwindcss()
   ],
-  base: '/wedding/' 
+  base: '/wedding/',
+  publicDir: "public"
 });
