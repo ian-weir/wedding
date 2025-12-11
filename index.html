@@ -199,14 +199,18 @@
   <form
     id="rsvpForm"
    >
-    <label class="px-5">
-      <span class="label">Attending</span>
-      <input type="radio" name="attending" class="radio radio-primary" checked="checked" value="Yes"/>
-    </label>
-    <label class="px-5">
-      <span class="label">Cannot Attend</span>
-      <input type="radio" name="attending" class="radio radio-error" value="No" />
-    </label>
+    <div>
+     <label class="px-5" for="attending">
+       <span class="label">Attending</span>
+       <input type="radio" name="attending" class="radio radio-primary" checked="checked" value="Yes" id="attending"/>
+      </label>
+    </div>
+    <div>
+      <label class="px-5" for="notAttending">
+        <span class="label">Cannot Attend</span>
+        <input type="radio" name="attending" class="radio radio-error" value="No" id="notAttending"/>
+      </label>
+    </div>
     <fieldset class="fieldset lg:border lg:p-4">
       <legend class="fieldset-legend">First Attendee</legend>
       <div class="lg:grid lg:grid-cols-2 gap-y-4">
