@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   </head>
-  <body bg-secondary>
-    <div class="bg-secondary">
+  <body>
+    <div class="bg-secondary " style="overflow-x: hidden;">
       <div class="w-auto md:w-4/5 m-auto text-center pb-10" id="app">
 
         <div class="navbar bg-primary sticky top-0 absolute z-9">
@@ -39,8 +39,8 @@
 </div>
 
 <div id="home" class="flex flex-col justify-center z-1 scroll-home">
-  <div id="hero" class="hero"
-    style="height: 80vh; background-image: url(./public/hero.avif); background-position: center 75%; background-size: cover; background-repeat: no-repeat;">
+  <div id="hero" class="hero h-[65vh] lg:h-[80vh]"
+    style="background-image: url(./public/hero.avif); background-position: center 75%; background-size: cover; background-repeat: no-repeat;">
     <div class="hero-overlay"></div>
     <div class="hero-content text-primary-content h-full">
       <div class="max-w-md text-3xl lg:mt-[90%]">
@@ -60,9 +60,9 @@
 <div id="sections" class="space-y-10">
   <div id="location" class="w-7/10 mx-auto py-5 scroll-location ">
     <div class="flex justify-center items-center">
-      <img src="./public/leafy.svg" height="36" style="transform: scale(-1, 1)"/>
+      <img src="./public/leafy.svg" height="36" style="transform: scale(-1, 1)" class="invisible lg:visible"/>
       <h2 class="text-5xl parisienne-regular"> Location </h2>
-      <img src="./public/leafy.svg" height="36" />
+      <img src="./public/leafy.svg" height="36" class="invisible lg:visible" />
     </div>
     <div class="grid md:grid-cols-2 gap-4 mt-4 place-items-center text-xl">
       <div>
@@ -88,9 +88,9 @@
 
 <div id="faq" class="w-7/10 mx-auto scroll-to">
   <div class="flex justify-center items-center">
-      <img src="./public/leafy.svg" style="transform: scale(-1, 1)"/>
+      <img src="./public/leafy.svg" style="transform: scale(-1, 1)" class="invisible lg:visible"/>
       <h2 class="text-5xl parisienne-regular my-4"> Frequently Asked Questions </h2>
-      <img src="./public/leafy.svg"/>
+      <img src="./public/leafy.svg" class="invisible lg:visible"/>
   </div>
   <div class="text-xl mb-2 font-bold">
     Can we bring children?
@@ -137,9 +137,9 @@
 
 <div id="accomodations" class="w-7/10 mx-auto scroll-to">
   <div class="flex justify-center items-center">
-      <img src="./public/leafy.svg" style="transform: scale(-1, 1)"/>
+      <img src="./public/leafy.svg" style="transform: scale(-1, 1)" class="invisible lg:visible"/>
       <h2 class="text-5xl parisienne-regular my-4"> Accomodations </h2>
-      <img src="./public/leafy.svg"/>
+      <img src="./public/leafy.svg" class="invisible lg:visible"/>
   </div>
     <div class="text-base mb-4">
       Here's a few nearby hotels you could stay:
@@ -188,9 +188,9 @@
 
 <div id="rsvp" class="w-7/10 mx-auto scroll-to">
   <div class="flex justify-center items-center">
-      <img src="./public/leafy.svg" style="transform: scale(-1, 1)"/>
+      <img src="./public/leafy.svg" style="transform: scale(-1, 1)" class="invisible lg:visible"/>
       <h2 class="text-5xl parisienne-regular my-4"> Rsvp </h2>
-      <img src="./public/leafy.svg"/>
+      <img src="./public/leafy.svg" class="invisible lg:visible"/>
   </div>
   <div class="text-base mb-4">
     You're more than welcome to bring whoever you'd like for your plus one. Your significant other, best friend or even that coworker you're really trying to impress.
@@ -258,6 +258,7 @@
 </div>
 
 </div>
+<img class="m-auto mt-10 h-[70vh] lg:h-[100vh]" src="./public/bottom.avif">
 </div>
       </div>
     </div>
